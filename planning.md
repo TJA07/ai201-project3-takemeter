@@ -24,6 +24,18 @@ We define three mutually exclusive and exhaustive labels to categorize the quali
 * **The Borderline Case:** A post that is highly emotional and opinionated (suggesting `subjective_take`) but drops a single piece of specific technical jargon or a scene reference to appear credible.
 * **Decision Rule:** If the technical detail or scene reference is actively integrated into a structured, logical argument that supports the main thesis, classify it as `analysis`. If the detail is treated as a decorative throwaway line or an unelaborated buzzword ("the cinematography was good") inside a purely emotional rant, classify it as `subjective_take`.
 
+### Documented Difficult Examples (From Annotation)
+During the review of our 200 examples, these three posts presented genuine boundary issues:
+
+1. **"The objective cinemotography in 'The Northman' failed because I couldn't understand what they were saying half the time. Total mess."**
+   * *The Dilemma:* It uses the word "cinematography" and "objective," which usually signals `analysis`.
+   * *The Decision:* Labeled **`subjective_take`**. The user misuses technical jargon to describe sound mixing/dialogue, proving there is no actual structured cinematic argument being made, just an emotional rant disguised with buzzwords.
+2. **"I hate modern movies. 'Avatar: The Way of Water' is a perfect example. The plot is garbage and the cinematography was just flashy garbage to hide how boring it is. No themtic depth at all."**
+   * *The Dilemma:* Mentions "cinematography" and "thematic depth". 
+   * *The Decision:* Labeled **`subjective_take`**. The technical terms are entirely decorative and unelaborated. The core of the post is "I hate modern movies" and "it is boring."
+3. **"Can we compile the best uses of classical music in modern cinema? Like Kubrick's use of Beethoven in 'A Clockwork Orange'."**
+   * *The Dilemma:* Cites specific directorial techniques and specific scenes, which looks like `analysis`.
+   * *The Decision:* Labeled **`curation`**. Even though it cites a specific filmic technique, the primary structural purpose of the post is a call to action for the community to compile a list.
 ---
 
 ## 4. Data Collection Plan
